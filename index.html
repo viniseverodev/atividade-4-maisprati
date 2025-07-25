@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vinicius Severo - Portifólio</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <button id="navToggle" class="nav-toggle" aria-label="Abrir Menu">
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+      <nav id="navMenu" class="navMenu">
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#tecnologias">Tecnologias</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <img class="imgProfile" src="./img/eu.jpeg" alt="" />
+      <div class="textProfile">
+        <h1>Vinicius Severo</h1>
+        <p>Desenvolvedor FullStack</p>
+      </div>
+    </header>
+
+    <main>
+      <section id="sobre" class="sobre">
+        <h2>Sobre mim</h2>
+        <p>
+          Sou um desenvolvedor FullStack com experiência em diversas
+          tecnologias. Minha paixão é criar soluções que ajudem as pessoas e
+          empresas a alcançarem seus objetivos.
+        </p>
+      </section>
+
+      <section id="projetos" class="projetos">
+        <h2>Projetos</h2>
+        <div class="containerProjetos">
+          <div class="card">
+            <h3>🍕 FoodNow – Cardápio Digital Interativo</h3>
+            <p>Site fictício de um restaurante moderno, com um cardápio online dividido por categorias como pizzas, lanches e bebidas. A ideia é proporcionar uma experiência interativa e responsiva para o usuário, com foco na navegação fluida e nos efeitos visuais.</p>
+            <h4>Tecnologias envolvidas:</h4>
+            <p>HTML, CSS (Flexbox/Grid), JavaScript</p>
+          </div>
+
+          <div class="card">
+            <h3>🎬 MovieSpace – Catálogo de Filmes</h3>
+            <p>Projeto fictício de um catálogo de filmes, com foco em organização visual e experiência do usuário. O sistema permite pesquisar por filmes e exibe cards com sinopse, imagem e avaliação. Foi pensado para treinar manipulação de dados e organização de layout.</p>
+            <h4>Tecnologias envolvidas:</h4>
+            <p>HTML, CSS, JavaScript</p>
+          </div>
+
+          <div class="card">
+            <h3>💼 DevJobs – Plataforma de Vagas para Desenvolvedores</h3>
+            <p>Projeto fictício de uma plataforma de vagas voltada exclusivamente para programadores. O objetivo é simular a interface de um site onde empresas podem cadastrar oportunidades e desenvolvedores podem buscar e visualizar vagas por tecnologia, nível e localização.</p>
+            <h4>Tecnologias envolvidas:</h4>
+            <p>HTML, CSS, JavaScript</p>
+          </div>
+      </section>
+
+      <section id="tecnologias" class="tecnologias">
+        <h2>Tecnologias</h2>
+        <p>Tenho experiência com as seguintes tecnologias:</p>
+        <div class="containerTec">
+          <ul>
+            <li class="html"><ion-icon name="logo-html5"></ion-icon></li>
+            <li class="css"><ion-icon name="logo-css3"></ion-icon></li>
+            <li class="js"><ion-icon name="logo-javascript"></ion-icon></li>
+            <li class="react"><ion-icon name="logo-react"></ion-icon></li>
+            <li><ion-icon name="logo-python"></ion-icon></li>
+            <li><ion-icon name="logo-github"></ion-icon></li>
+          </ul>
+        </div>
+      </section>
+
+      <aside id="contato" class="contato">
+        <h2>Entre em contato comigo</h2>
+        <form action="">
+          <label for="name">Nome:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Seu nome"
+            required
+          />
+
+          <label for="email">E-mail:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Seu e-mail"
+            required
+          />
+
+          <label for="contact">Mensagem:</label>
+          <textarea
+            name="contact"
+            id="contact"
+            placeholder="Digite sua mensagem..."
+            rows="3"
+            required
+          ></textarea>
+
+          <button>Enviar</button>
+        </form>
+
+        <p>Você também pode me encontrar nas redes sociais:</p>
+        <ul>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/viniciusseveroo/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <ion-icon name="logo-linkedin" class="linkedin"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/viniseverodev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <ion-icon name="logo-github" class="gitHub"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer>
+      <p>Todos os direitos reservados. &copy; 2025 Vinicius Severo.</p>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
